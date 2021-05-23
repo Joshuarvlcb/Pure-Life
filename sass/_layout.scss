@@ -25,10 +25,17 @@
 }
 .testimonial {
   height: 80vh;
-  background-color: honeydew;
   display: flex;
   align-items: center;
   position: relative;
+  background-image: linear-gradient(
+      to right,
+      rgba(128, 128, 128, 0.603),
+      rgba(0, 0, 0, 0.719)
+    ),
+    url(https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-position: center;
 }
 .form {
   height: 70vh;
@@ -37,5 +44,5 @@
 }
 .footer {
   height: 60vh;
-  background-color: indigo;
+  background-color: blanchedalmond;
 }

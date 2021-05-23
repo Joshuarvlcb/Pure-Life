@@ -56,7 +56,6 @@ body {
 
 .testimonial {
   height: 80vh;
-  background-color: honeydew;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,6 +63,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(128, 128, 128, 0.603)), to(rgba(0, 0, 0, 0.719))), url(https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.603), rgba(0, 0, 0, 0.719)), url(https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-position: center;
 }
 
 .form {
@@ -76,7 +79,7 @@ body {
 
 .footer {
   height: 60vh;
-  background-color: indigo;
+  background-color: blanchedalmond;
 }
 
 .header__logo {
@@ -382,6 +385,8 @@ body {
   margin-left: 13rem;
   position: relative;
   overflow: hidden;
+  -webkit-box-shadow: 0.2rem 2rem 3rem rgba(0, 0, 0, 0.363);
+          box-shadow: 0.2rem 2rem 3rem rgba(0, 0, 0, 0.363);
 }
 
 .testimonial-con__line {
@@ -403,9 +408,9 @@ body {
 }
 
 .testimonial-con__para {
-  color: rgba(0, 0, 0, 0.658);
-  font-size: 0.9rem;
-  line-height: 1.4;
+  color: #3b3b3bbd;
+  font-size: 1rem;
+  line-height: 1.7;
   margin-bottom: 1rem;
 }
 
@@ -416,8 +421,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.2rem;
-  color: black;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.712);
 }
 
 .testimonial-con::before {
@@ -455,6 +460,7 @@ body {
   display: block;
   margin-right: 1rem;
   width: 2.4rem;
+  cursor: pointer;
   height: 0.4rem;
   background-color: #656479;
 }
