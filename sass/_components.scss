@@ -6,6 +6,13 @@
   height: 150%;
   position: relative;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 8rem;
+    width: 8rem;
+  }
 }
 
 //nav
@@ -21,6 +28,8 @@
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 700;
+    line-height: 0px;
+    cursor: pointer;
     color: #46454c;
   }
   &__item {
@@ -29,6 +38,7 @@
     align-items: center;
     width: 9rem;
     list-style: none;
+    cursor: pointer;
   }
   &__item:hover {
     background-color: #f6f6f6;
@@ -41,6 +51,10 @@
   background-color: #7f7afc;
   height: 100%;
   display: flex;
+  font-weight: 500;
+
+  font-size: 1.3rem;
+
   justify-content: center;
   align-items: center;
 }
@@ -75,14 +89,27 @@
     text-transform: uppercase;
     font-weight: bold;
   }
-  &__video__icon {
+  &__video__icon-con {
     flex: 0 0 30%;
     background-color: #7f7bfa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
+  &__video__icon {
+    height: 3rem;
+    width: 3rem;
+    fill: white;
+  }
+
   &__picture {
     height: 13rem;
     width: 13rem;
     position: absolute;
+    background-image: url(../pure-life-mini.jpg);
+    background-position: center;
+    background-size: cover;
     bottom: 0;
     right: 0;
   }
@@ -117,6 +144,8 @@
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 3px;
   }
 }
 
@@ -128,8 +157,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
+  position: relative;
   flex-direction: column;
+  overflow: hidden;
   height: 100%;
   &:first-child {
     background-color: #a09bfc;
@@ -143,16 +173,33 @@
   &__header {
     color: white;
     font-size: 2rem;
-    padding-left: 5rem;
+    padding-left: 10rem;
     padding-bottom: 0.7rem;
+    font-weight: 400;
   }
   &__para {
     color: white;
-    font-size: 1.2rem;
-    padding: 0 5rem;
+    font-size: 1.1rem;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
   }
 
-  //   -webkit-mask-image: url(../building.svg);
+  &__svg {
+    height: 10rem;
+    width: 10rem;
+    background-color: #4b4b4b71;
+    position: absolute;
+    left: -3rem;
+    -webkit-mask-image: url(../building.svg);
+  }
+  &__svg--build-2 {
+    -webkit-mask-image: url(../building1.svg);
+  }
+  &__svg--build-3 {
+    -webkit-mask-image: url(../building2.svg);
+  }
 }
 //testimonial
 .testimonial-con {

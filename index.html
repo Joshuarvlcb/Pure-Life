@@ -11,10 +11,17 @@
     <title>Boiler PLate</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel='shortcut icon' href=' type='image/x-icon'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
-      <div class="header__logo"></div>
+      <div class="header__logo">
+        <img src="./pl-logo.png" alt="" />
+      </div>
 
       <ul class="nav">
         <li class="nav__item"><a href="" class="nav__link">Home</a></li>
@@ -23,25 +30,25 @@
         <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
       </ul>
 
-      <div class="header__number">623-567-9891</div>
+      <div class="header__number">CALL 623-567-9891</div>
     </header>
 
     <div class="landing"></div>
     <div class="welcome">
       <div class="intro">
-        <h3 class="intro__text">All the painting tools you need</h3>
+        <h3 class="intro__text">All the painting jobs you need</h3>
 
         <div class="intro__video">
           <p class="intro__video__text">intro video</p>
 
-          <div class="intro__video__icon"></div>
+          <div class="intro__video__icon-con">
+            <svg class="intro__video__icon">
+              <use href="sprite.svg#icon-chevron-right"></use>
+            </svg>
+          </div>
         </div>
 
-        <img
-          class="intro__picture"
-          src="https://images.pexels.com/photos/4846106/pexels-photo-4846106.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-          alt="picture of painted house"
-        />
+        <div class="intro__picture"></div>
 
         <div class="toggle toggle--welcome">
           <span class="toggle__item toggle--active"></span
@@ -51,7 +58,7 @@
       <div class="picture-con">
         <img
           class="picture-con__picture"
-          src="https://images.pexels.com/photos/3562689/pexels-photo-3562689.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          src="./pure-life-main-pic.jpeg"
           alt=""
         />
         <div class="picture-con__quote">Get free quote</div>
@@ -59,6 +66,7 @@
     </div>
     <div class="description">
       <div class="description__content">
+        <div class="description__content__svg"></div>
         <div class="description__content__header">Commercial</div>
         <div class="description__content__para">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae non ab
@@ -67,6 +75,7 @@
       </div>
 
       <div class="description__content">
+        <div class="description__content__svg description__content__svg--build-2"></div>
         <div class="description__content__header">Residential</div>
         <div class="description__content__para">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae non ab
@@ -75,6 +84,8 @@
       </div>
 
       <div class="description__content">
+       <div class="description__content__svg description__content__svg--build-3"></div>
+        <div 
         <div class="description__content__header">Commercial</div>
         <div class="description__content__para">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae non ab
@@ -128,12 +139,65 @@
             <input type="text" class="form__content-area__input" />
           </div>
 
-          <textarea class="form__content-area__text" name="" id="" cols="30" rows="10"></textarea>
+          <textarea
+            class="form__content-area__text"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
 
           <button class="form__content-area__btn">Send message</button>
         </div>
       </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+      <div class="footer__heading">
+        <h3>Lets discuss whats next</h3>
+        <div class="footer__heading-Icon">Get in touch</div>
+      </div>
+      <hr />
+      <div class="footer__main">
+        <div class="footer__main-content">
+          <h1>Painting service</h1>
+          <nav class="footer__main-content__nav">
+            <li class="footer__main-content__link">Lorem, ipsum dolor.</li>
+            <li class="footer__main-content__link">Lorem, ipsum dolor.</li>
+            <li class="footer__main-content__link">Lorem, ipsum dolor.</li>
+            <li class="footer__main-content__link-email">
+              Lorem, ipsum dolor.
+            </li>
+            <li class="footer__main-content__link-phone">
+              Lorem, ipsum dolor.
+            </li>
+          </nav>
+        </div>
+        <div class="footer__main-content">
+          <h1>Navigation</h1>
+          <nav class="footer__main-content__nav">
+            <li class="footer__main-content__link">Lorem, ipsum dolor.</li>
+            <li class="footer__main-content__link">Lorem, ipsum dolor.</li>
+            <li class="footer__main-content__link">Lorem, ipsum dolor.</li>
+            <li class="footer__main-content__link-email">
+              Lorem, ipsum dolor.
+            </li>
+            <li class="footer__main-content__link-phone">
+              Lorem, ipsum dolor.
+            </li>
+          </nav>
+        </div>
+      </div>
+      <hr />
+      <div class="footer__end">
+        <div class="footer__end__copy">&copy; pure life 2021</div>
+        <div class="footer__end__terms">
+          <p>Terms & conditions</p>
+        </div>
+        <div class="footer__end__privacy">
+          <p>Privacy</p>
+        </div>
+        <div class="footer__end__up"></div>
+      </div>
+    </div>
   </body>
 </html>
