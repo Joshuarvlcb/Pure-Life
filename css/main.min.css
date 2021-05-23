@@ -71,7 +71,7 @@ body {
 
 .form {
   height: 70vh;
-  background-color: indianred;
+  background-color: #fffcff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,7 +380,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 25rem;
+  width: 30rem;
   padding: 3rem;
   margin-left: 13rem;
   position: relative;
@@ -493,13 +493,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 5rem;
+  margin-left: 7rem;
 }
 
 h2 {
   margin-bottom: 2rem;
   color: #444358;
   font-size: 3rem;
+  margin-left: 1rem;
 }
 
 .form__content-area {
@@ -510,6 +511,7 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 1.1rem;
 }
 
 .form__content-area .row {
@@ -519,16 +521,45 @@ h2 {
 }
 
 .form__content-area__input {
-  margin: 5px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  outline: none;
+  padding: 0.8rem;
+  border: none;
+  width: 15rem;
+  font-size: inherit;
+  border: #adadad 1px solid;
+}
+
+.form__content-area__input::-webkit-input-placeholder {
+  color: grey;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+
+.form__content-area__text {
+  margin-left: 1rem;
+  outline: none;
+  border: #adadad 1px solid;
+  padding: 1rem;
+  resize: none;
+  font-size: inherit;
+}
+
+.form__content-area__text::-webkit-input-placeholder {
+  font-size: 1.3rem;
+  color: grey;
 }
 
 .form__content-area__btn {
-  margin-top: 5px;
+  margin-left: 1rem;
+  margin-top: 1rem;
   padding: 1rem;
   color: white;
-  background-color: #6c67cc;
+  background-color: #6f67ff;
   outline: none;
   border: none;
   cursor: pointer;
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=main.min.css.map */
