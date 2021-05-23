@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+  font-size: 1.4rem;
+  color: white;
+}
+.welcome {
+  min-height: 80vh;
+  display: flex;
+  background-color: rgb(116, 116, 116);
+}
+.description {
+  height: 17rem;
+  display: flex;
+}
+.skills {
+  height: 70vh;
+  background-color: grey;
+}
+.testimonial {
+  height: 80vh;
+  background-color: honeydew;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.form {
+  height: 70vh;
+  background-color: indianred;
+  display: flex;
+}
+.footer {
+  height: 60vh;
+  background-color: indigo;
+}
