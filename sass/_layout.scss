@@ -43,6 +43,13 @@
   display: flex;
 }
 .footer {
-  height: 60vh;
-  background-color: blanchedalmond;
+  background-color: #444358;
+  hr {
+    border-color: rgb(153, 153, 153);
+  }
+}
+.footer__main {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
 }

@@ -7,11 +7,18 @@
   position: relative;
   z-index: 1000;
   display: flex;
+  flex-direction: column;
+
   justify-content: center;
   align-items: center;
   img {
-    height: 8rem;
-    width: 8rem;
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: 0.6rem;
+  }
+  &__name {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
   }
 }
 
@@ -175,14 +182,14 @@
     font-size: 2rem;
     padding-left: 10rem;
     padding-bottom: 0.7rem;
-    font-weight: 400;
+    font-weight: 500;
   }
   &__para {
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-left: 10rem;
     padding-right: 5rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 1.5;
   }
 
@@ -342,5 +349,82 @@ h2 {
     border: none;
     cursor: pointer;
     font-size: 1.1rem;
+  }
+}
+//footer
+.footer__heading {
+  padding: 2rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h3 {
+    font-size: 2.2rem;
+    color: #ffffff;
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #7f7afc;
+    text-transform: uppercase;
+  }
+  &__icon {
+    margin-left: 1rem;
+    height: 2.4rem;
+    width: 2.4rem;
+    background-color: #7f7afc;
+    border-radius: 50%;
+  }
+}
+.footer__main-content {
+  & {
+    h1 {
+      text-transform: capitalize;
+      color: white;
+      font-size: 1.7rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+  }
+  &__item {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: lightgray;
+    font-size: 1rem;
+  }
+  .P {
+    color: lightgreen;
+    display: inline;
+  }
+  .E {
+    color: lightgreen;
+    display: inline;
+  }
+}
+.footer__end {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+  align-items: center;
+  color: lightgrey;
+  font-size: 1.1rem;
+  &__copy {
+  }
+  &__terms {
+    margin-left: auto;
+  }
+  &__privacy {
+    margin-left: 5rem;
+  }
+  &__up {
+    height: 3rem;
+    width: 3rem;
+    background-color: lightpink;
+    border-radius: 50%;
+    margin-left: 15%;
   }
 }
