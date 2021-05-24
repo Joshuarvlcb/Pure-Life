@@ -11,7 +11,6 @@
   background-color: white;
 }
 .welcome {
-  min-height: 80vh;
   display: flex;
   background-color: rgb(116, 116, 116);
 }
@@ -24,7 +23,7 @@
   background-color: grey;
 }
 .testimonial {
-  height: 80vh;
+  padding: 5rem 0;
   display: flex;
   align-items: center;
   position: relative;
@@ -38,7 +37,6 @@
   background-position: center;
 }
 .form {
-  height: 70vh;
   background-color: rgb(255, 252, 255);
   display: flex;
 }

@@ -54,7 +54,7 @@
 
 //header__number
 .header__number {
-  padding: 0 5rem;
+  padding: 0 2rem;
   background-color: #7f7afc;
   height: 100%;
   display: flex;
@@ -69,6 +69,7 @@
   flex: 0 0 40%;
   background-color: #444358;
   display: flex;
+  padding: 9rem;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
@@ -77,6 +78,7 @@
   position: relative;
   &__text {
     font-size: 4rem;
+    padding-right:2rem;
     margin-bottom: 3rem;
   }
   &__video {
@@ -135,15 +137,17 @@
   color: white;
   position: relative;
   &__picture {
-    height: 100%;
+    background-image: url(../pure-life-main-pic.jpeg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
+    height: 100%;
   }
   &__quote {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 13rem;
-    width: 13rem;
+ padding: 3rem;
     background-color: #7f7bfa;
     display: flex;
     justify-content: center;
@@ -295,6 +299,8 @@
   align-items: flex-start;
   justify-content: center;
   margin-left: 7rem;
+  padding:2rem 0;
+
 }
 h2 {
   margin-bottom: 2rem;
